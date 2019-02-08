@@ -1,0 +1,41 @@
+{
+  "name": "proxy-web",
+  "version": "0.0.5",
+  "homepage": "https://github.com/michaelvillar/proxy-web",
+  "author": "Michael Villar <me@michaelvillar.com> (http://twitter.com/michaelvillar)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michaelvillar/proxy-web"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "build:watch": "babel --watch src -d lib",
+    "prepublish": "npm run build"
+  },
+  "bugs": {
+    "url": "https://github.com/michaelvillar/proxy-web/issues"
+  },
+  "main": "lib/proxy_web.js",
+  "devDependencies": {
+    "babel-cli": "^6.0.0",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-plugin-transform-object-rest-spread": "^6.16.0",
+    "babel-plugin-transform-regenerator": "^6.16.1",
+    "babel-preset-es2015": "^6.16.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.16.0",
+    "ent": "^2.2.0",
+    "escape-string-regexp": "^1.0.5",
+    "express": "^4.14.0",
+    "htmlparser2": "^3.9.1",
+    "lodash": "^4.16.3",
+    "request": "^2.75.0",
+    "request-promise-native": "^1.0.3"
+  },
+  "keywords": [
+    "proxy",
+    "web"
+  ],
+  "license": "MIT"
+}
